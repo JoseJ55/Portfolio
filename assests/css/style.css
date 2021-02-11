@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: grey;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+header{
+    background-color: darkgray;
+    width: 100%;
+    margin-bottom: 1vh;
+    display: flex;
+}
+
+h1{
+    width: 25%;
+    color: white;
+    padding: 2.5vh 3vw;
+    font-size: 5vh;
+}
+
+nav{
+    width: 70%;
+    padding: 0 1vw;
+}
+
+nav ul{
+    float: right;
+}
+nav ul li{
+    text-decoration: none;
+    display: inline-flex;
+    font-size: 140%;
+    padding: 4vh 1vw;
+}
+
+nav ul li:hover{
+    background-color: white;
+}
