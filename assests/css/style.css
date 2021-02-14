@@ -37,6 +37,11 @@ nav ul li{
     padding: 4vh 1vw;
 }
 
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
 nav ul li:hover{
     background-color: white;
 }
@@ -67,6 +72,16 @@ nav ul li:hover{
 .work{
     padding: 2vh 1vw;
     background-color: grey;
+}
+
+.heads {
+    width: 70%;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 2vh;
+    padding: 0 2vw 2vh 2vw;
+    font-size: 170%;
+    border-bottom: 5px black solid;
 }
 
 .work section{
@@ -104,7 +119,7 @@ nav ul li:hover{
 }
 
 .contact section p{
-    margin: 1vh 1vw;
+    margin: 2vh 1vw;
     padding: 0 2vw;
     font-size: 110%;
 }
@@ -126,4 +141,9 @@ nav ul li:hover{
 }
 
 footer {
+    width: 100%;
+    text-align: center;
+    padding: 5vh 0;
+    color: white;
+    background-color: black;
 }
