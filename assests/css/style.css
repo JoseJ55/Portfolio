@@ -12,7 +12,6 @@ body{
 header{
     background-color: darkgray;
     width: 100%;
-    margin-bottom: 1vh;
     display: flex;
 }
 
@@ -40,4 +39,46 @@ nav ul li{
 
 nav ul li:hover{
     background-color: white;
+}
+
+.about_me{
+    padding: 30vh 0;
+    background-color: white;
+}
+
+.about_me h2 {
+    text-align: center;
+    font-size: 200%;
+    padding: 0 35vw 0 0;
+    margin: 1vh 0;
+    width: 605;
+}
+
+.about_me p{
+    text-align: center;
+    font-size: 170%;
+    padding: 0 0 0 5vw;
+    width: 40%;
+    flex-wrap: wrap;
+    margin: auto;
+
+}
+
+.work{
+    padding: 2vh 1vw;
+    background-color: red;
+}
+
+.work section{
+    width: 80%;
+    margin: auto;
+    height: 20vh;
+    margin-bottom: 1vh;
+    padding: 1vh 1vw;
+    background-color: blue;
+}
+
+.work img{
+    width: 100%;
+    height: auto;
 }
