@@ -4,18 +4,17 @@
 }
 
 body{
-    background-color: grey;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
 }
 
 header{
-    background-color: darkgray;
+    background-color: #006666;
     width: 100%;
     display: flex;
 }
 
-h1{
+header h1{
     width: 25%;
     color: white;
     padding: 2.5vh 3vw;
@@ -39,7 +38,7 @@ nav ul li{
 
 nav ul li a{
     text-decoration: none;
-    color: black;
+    color: #ff6600;
 }
 
 nav ul li:hover{
@@ -48,15 +47,18 @@ nav ul li:hover{
 
 .about_me{
     padding: 37vh 0;
-    background-color: white;
+    width: 100%;
+    height: auto;
+    background-image: url('../pictures/city_background.jpg');
+    background-position: center;
+    color: white;
 }
 
 .about_me h2 {
     text-align: center;
     font-size: 200%;
     padding: 0 35vw 0 0;
-    margin: 1vh 0;
-    width: 605;
+    width: 60%;
 }
 
 .about_me p{
@@ -66,12 +68,12 @@ nav ul li:hover{
     width: 40%;
     flex-wrap: wrap;
     margin: auto;
-
+    margin-top: 1vh;
 }
 
 .work{
     padding: 2vh 1vw;
-    background-color: grey;
+    background-color: #006666;
 }
 
 .heads {
@@ -81,7 +83,8 @@ nav ul li:hover{
     margin-bottom: 2vh;
     padding: 0 2vw 2vh 2vw;
     font-size: 170%;
-    border-bottom: 5px black solid;
+    color: #ff6600;
+    border-bottom: 5px #ff6600 solid;
 }
 
 .work section{
@@ -90,26 +93,45 @@ nav ul li:hover{
     height: 30vh;
     margin-bottom: 1vh;
     overflow: hidden;
-    border: 5px darkgrey solid;
+    border: 5px #600080 solid;
+    background-image: url("../pictures/temp_background.jpg");
+    background-size: 100%;
 }
-
+/* Need to work on parts here text doesn't appear normally when hovering over image */
 .work img{
     width: 100%;
-    align-items: center;
-    justify-content: center;
+    z-index: 0;
+}
+
+.work section p{
+    position: relative;
+    font-size: 200%;
+    text-align: center;
+    top: 50%;
+    transform: translate(0, 50%);
+    color: white;
+    display: none;
+}
+
+.work section:hover{
+    opacity: .7;
+}
+
+.work section:hover p{
+    display: block;
 }
 
 .contact{
     width: 100%;
     padding: 2vh 0;
-    background-color: darkgrey;
+    background-color: #008080;
 }
 
 .contact section{
     width: 25%;
     margin: auto;
     padding: 10vh 10vw;
-    border: 5px grey solid;
+    border: 5px #600080 solid;
     background-color: white;
 }
 
@@ -127,12 +149,13 @@ nav ul li:hover{
 .resume{
     width: 100%;
     padding: 2vh 0;
+    background-color: #006666;
 }
 
 .resume article{
     width: 60%;
     margin: auto;
-    border: 5px darkgray solid;
+    border: 5px #600080 solid;
 }
 
 .resume img{
@@ -146,4 +169,61 @@ footer {
     padding: 5vh 0;
     color: white;
     background-color: black;
+}
+
+@media screen and (max-width: 900px){
+    header h1{
+        font-size: 170%;
+    }
+    nav ul li a{
+        font-size: 90%;
+    }
+    .about_me{
+        padding: 30vh 0;
+        height: 10vh;
+    }
+    .about_me h2{
+        font-size: 170%;
+        padding: 0 30vw 0 0;
+        margin-bottom: 1vh;
+    }
+    .about_me p{
+        font-size: 120%;
+        padding: 0 10vw 0 0;
+        width: 50%;
+    }
+    .contact section{
+        width: 35%;
+    }
+    .resume article{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 550px){
+    header h1{
+        font-size: 150%;
+    }
+    nav ul li a{
+        font-size: 80%;
+    }
+    .about_me{
+        padding: 25vh 0;
+        height: 7vh;
+    }
+    .about_me h2{
+        font-size: 150%;
+        padding: 0 20vw 0 0;
+    }
+    .about_me p{
+        font-size: 100%;
+        padding: 0 5vw 0 0;
+        width: 50%;
+    }
+    .contact section{
+        width: 45%;
+    }
+    .resume article{
+        width: 80%;
+    }
 }
