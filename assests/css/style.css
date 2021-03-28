@@ -3,54 +3,69 @@
     padding: 0;
 }
 
+:root {
+    --main-color: #003cb3;
+    --secondary-color: #0044cc;
+    --title-color: #ff6600;
+    --border-color: #600080;
+}
+
 body{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
 }
 
 header{
-    background-color: #006666;
     width: 100%;
-    display: flex;
+    background-image: url('../pictures/city_background.jpg');
+    background-position: center;
+    height: auto;
 }
 
-header h1{
+/* header h1{
     width: 25%;
     color: white;
     padding: 2.5vh 3vw;
     font-size: 5vh;
-}
+    opacity: 1;
+} */
 
 nav{
-    width: 70%;
-    padding: 0 1vw;
+    width: 100%;
+    margin: auto;
+    height: auto;
 }
 
 nav ul{
-    float: right;
+    width: 100%;
+    margin: auto;
+    background-color: rgb(0, 51, 153, .5);
 }
+
+#nav-area{
+    width: 45%;
+    margin: auto;
+}
+
 nav ul li{
     text-decoration: none;
     display: inline-flex;
     font-size: 140%;
-    padding: 4vh 1vw;
+    padding: 3vh 1vw;
 }
 
 nav ul li a{
     text-decoration: none;
-    color: #ff6600;
+    color: var(--title-color);
 }
 
 nav ul li:hover{
-    background-color: white;
+    background-color: rgba(28, 90, 214, 0.5);
 }
 
 .about_me{
-    padding: 37vh 0;
+    padding: 31vh 0;
     width: 100%;
-    height: auto;
-    background-image: url('../pictures/city_background.jpg');
-    background-position: center;
     color: white;
 }
 
@@ -73,7 +88,7 @@ nav ul li:hover{
 
 .work{
     padding: 2vh 1vw;
-    background-color: #006666;
+    background-color: var(--main-color);
 }
 
 .heads {
@@ -83,8 +98,8 @@ nav ul li:hover{
     margin-bottom: 2vh;
     padding: 0 2vw 2vh 2vw;
     font-size: 170%;
-    color: #ff6600;
-    border-bottom: 5px #ff6600 solid;
+    color: var(--title-color);
+    border-bottom: 5px var(--title-color) solid;
 }
 
 .work section{
@@ -93,9 +108,21 @@ nav ul li:hover{
     height: 30vh;
     margin-bottom: 1vh;
     overflow: hidden;
-    border: 5px #600080 solid;
-    background-image: url("../pictures/temp_background.jpg");
+    border: 5px var(--border-color) solid;
+    /* background-image: url("../pictures/temp_background.jpg"); */
     background-size: 100%;
+}
+
+#project1{
+    background-image: url("../pictures/weatherDashboard.png");
+}
+
+#project2{
+    background-image: url("../pictures/codeQuiz.png");
+}
+
+#project3{
+    background-image: url("../pictures/SaveAShot.png");
 }
 /* Need to work on parts here text doesn't appear normally when hovering over image */
 .work img{
@@ -109,7 +136,7 @@ nav ul li:hover{
     text-align: center;
     top: 50%;
     transform: translate(0, 50%);
-    color: white;
+    color: var(--title-color);
     display: none;
 }
 
@@ -124,14 +151,14 @@ nav ul li:hover{
 .contact{
     width: 100%;
     padding: 2vh 0;
-    background-color: #008080;
+    background-color: var(--secondary-color);
 }
 
 .contact section{
     width: 25%;
     margin: auto;
     padding: 10vh 10vw;
-    border: 5px #600080 solid;
+    border: 5px var(--border-color) solid;
     background-color: white;
 }
 
@@ -149,13 +176,13 @@ nav ul li:hover{
 .resume{
     width: 100%;
     padding: 2vh 0;
-    background-color: #006666;
+    background-color: var(--main-color);
 }
 
 .resume article{
     width: 60%;
     margin: auto;
-    border: 5px #600080 solid;
+    border: 5px var(--border-color) solid;
 }
 
 .resume img{
