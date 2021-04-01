@@ -6,6 +6,8 @@
 :root {
     --main-color: #003cb3;
     --secondary-color: #0044cc;
+    --third-color: #1a5de2;
+    --fourth-color: #3875ee;
     --title-color: #ff6600;
     --border-color: #600080;
 }
@@ -15,7 +17,7 @@ body{
     font-size: 16px;
 }
 
-header{
+#home{
     width: 100%;
     background-image: url('../pictures/city_background.jpg');
     background-position: center;
@@ -43,7 +45,7 @@ nav ul{
 }
 
 #nav-area{
-    width: 45%;
+    width: 39%;
     margin: auto;
 }
 
@@ -190,6 +192,59 @@ nav ul li:hover{
     height: 100%;
 }
 
+/* starting here is css for project pages */
+#project-head{
+    text-align: center;
+    background-color: var(--main-color);
+    font-size: 125%;
+    padding: 5vh 0;
+}
+
+#project-body{
+    margin: 0;
+    background-color: var(--secondary-color);
+}
+
+#description-area{
+    width: 60%;
+    margin: auto;
+    background-color: var(--third-color);
+    padding: 10vh 10vw;
+    font-size: 125%;
+}
+
+#images-area{
+    width: 80.2%;
+    margin: auto;
+    padding: 3vh 0;
+    background-color: var(--fourth-color);
+    display: flex;
+    justify-content: center;
+}
+
+#images-area img{
+    width: 70%;
+    border: var(--main-color) .5rem solid;
+    box-shadow: 1px 2px 10px 6px;
+}
+
+#code-area{
+    width: 60%;
+    margin: auto;
+    background-color: var(--third-color);
+    padding: 5vh 10vw;
+    display: flex;
+    justify-content: center;
+}
+
+#code-box{
+    width: 60%;
+    background-color: white;
+    border: grey .3rem inset;
+    padding: 3vh 3vw;
+}
+
+/* starting here is for footer section */
 footer {
     width: 100%;
     text-align: center;
